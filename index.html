@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Odin Library</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <button class="button" id="about-btn">
+        Info
+      </button>
+      <h2 class="nav-logo">Shelf</h2>
+      <button class="button">
+        <a class='button-link'href="https://github.com/Ginger-owl" target="_blank">
+          <i class="fa-brands fa-github"></i>
+          My Github</a>
+      </button>
+    </nav>
+    <div class="about" id="about-area">
+      <h3 class="about-summary">Shelf is an easy way to track your reading.</h3>
+      <p>With <strong>Shelf</strong> you can easily add books that you have already read and those that you are only planning to have read.</p>
+    </div>
+  </header>
+  <main class="content">
+    <form class="form" action="" id="add-book-form">
+      <div class="form-element">
+        <label class="form-label" for="title">Title</label>
+        <input class="form-input" type="text" id="title" name="title" required>
+      </div>
+      <div class="form-element">
+        <label class="form-label" for="author">Author</label>
+        <input class="form-input" type="text" id="author" name="author" required>
+      </div>
+      <div class="form-element">
+        <label class="form-label" for="pages">Pages</label>
+        <input class="form-input" type="number" id="pages" name="pages" min="1" max="9999">
+      </div>
+      <div class="form-element">
+        <label class="form-label-checkbox" for="isRead">Read?</label>
+        <input class="form-checkbox" type="checkbox" id="isRead" name="isRead" value="false">
+      </div>
+      <div class="form-element">
+        <button  type="button" class="btn-read form-button" id="add-book-btn">Add book</button>
+      </div>
+    </form>
+    <table class="library">
+      <thead>
+        <tr class="library-row library-head">
+          <th scope="col">
+          </th>
+          <th scope="col">
+            <h3 class="col-name">Title</h3>
+            <i class="fa-sharp fa-solid fa-caret-right"></i>
+          </th>
+          <th scope="col">
+            <h3 class="col-name">Author</h3>
+            <i class="fa-sharp fa-solid fa-caret-right"></i>
+          </th>
+          <th scope="col">
+            <h3 class="col-name">Pages</h3>
+            <i class="fa-sharp fa-solid fa-caret-right"></i>
+          </th>
+          <th scope="col">
+          </th>
+          <th scope="col">
+            <input type="button" class="btn-delete" id="btn-delete-all" value="Delete All">
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- <tr class="library-row">
+          <th scope="row">1</th>
+          <td>Harry Potter and the Philosopher's Stone</td>
+          <td>J. K. Rowling</td>
+          <td>223</td>
+          <td class="library-cell-button">
+              <input type="button" class="btn-read" value="Read">
+          </td>
+          <td class="library-cell-button">
+            <input type="button" class="btn-delete" value="Delete">
+          </td>
+        </tr>
+        <tr class="library-row">
+          <th scope="row">2</th>
+          <td>And Then There Were None</td>
+          <td>Agatha Christie</td>
+          <td>272</td>
+          <td class="library-cell-button">
+              <input type="button" class="btn-noread" value="Not read">
+          </td>
+          <td class="library-cell-button">
+            <input type="submit" class="btn-delete"  value="Delete">
+          </td>
+        </tr> -->
+      </tbody>
+    </table>
+  </main>
+  <footer class="footer">
+    <p class="footer-text"><a class="footer-link">The Odin Project</a> &copy; 2022</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
