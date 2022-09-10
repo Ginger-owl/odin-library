@@ -261,6 +261,7 @@ body {
 
 .form-button {
     grid-row-end: -1;
+    align-self: flex-end;
 }
 
 .library-head {
