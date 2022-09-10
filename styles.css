@@ -143,6 +143,13 @@ body {
     -webkit-transition: 1s;
     -moz-transition: 1s;
 }
+.button:hover .button-link{
+    color: #f7f7f7;
+    transition: 1s;
+    -o-transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+}
 
 .button:active {
     padding: 0.43m 0.67em;
