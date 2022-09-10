@@ -14,9 +14,9 @@ Local storage is used to store data.
 [Click](https://ginger-owl.github.io/odin-library/) to view.
 
 Used technologies:
-* HTML
-* CSS
 * JS
+* CSS
+* HTML
 
 Icons:
 * [Font Awesome](https://fontawesome.com/)
